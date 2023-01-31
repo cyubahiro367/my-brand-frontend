@@ -11,9 +11,19 @@ a{
     text-decoration: none;
 }
 
+li{
+
+    list-style-type: none
+}
+
 .container{
     display: flex;
 
+}
+
+.main {
+    width: 93%;
+    min-height: 100vh;
 }
 
 .leftSide {
@@ -86,71 +96,14 @@ img{
     background: #FFB400;
 }
 
-.bigButton:hover{
-    background-color: #FFB400;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .head{
-   min-width: 100vh; 
-   background-color: yellow;
-   height: 15%;
-   text-align: center;
-   vertical-align: middle;
-   line-height: 90px; 
-   font-size: 100px;
-   color: rgba(185,182,182,25);
-   position: relative;
-    z-index:100;
-} */
 .head{
     min-width: 100%;
-    /* background-color: yellow; */
    height: 15%;
     text-align: center;
    vertical-align: middle;
    line-height: 90px;
     position: absolute;
-    font-size: 70px;
+    font-size: 50px;
     z-index:100;
     color: #FFB400;
     opacity: 100%;
@@ -169,76 +122,22 @@ img{
 }
 
 
-
-
-
-.slideBar{
-    background-color: #141212;
-    min-height: 100vh;
-    margin-left: 425px;
-}
 #active{
     background: #FFB400;
 }
 
-/* .dot {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    background: #6D6D6D;
-    color: #fff;
-    text-align: center;
-    margin: 20px;
-    overflow: hidden;
-} */
-
-/* .dot:hover{
-    width: 100px;
-} */
-
-li{
-
-    list-style-type: none
-}
-
-.container-fluid{
-    background-color: #000000;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-}
-
-.content-about{
-    width: 91%;
-    min-height: 100vh;
-}
-
-.sidebar{
-    width: 9%;
-    min-height: 100vh;
-    background-color: #000000;
-}
-
-.abouts{
-    display: flex;
-    min-height: 85%;
-}
-
-.information{
-    width: 40%;
-    margin: 50px;
-}
-
-.experince{
-    width: 60%;
-    background-color: blue;
-}
-
 .content{
-    background-color: blue; 
-    color: white;text-align: center;
-    vertical-align: middle; 
-    margin-left: 700px;
-    width: 60%;
+    height: 85%;
+    background-color: red;
+    display: flex;
+}
+
+#project{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 120px;
 }
