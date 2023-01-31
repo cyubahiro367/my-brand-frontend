@@ -1,5 +1,7 @@
 ###### CYUBAHIRO THEOTIME
+-------------------------
 #### ABOUT ME
+-------------
 
 Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Software Testing, Software Design, Software, Application Development, and Software Development. 
 
