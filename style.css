@@ -16,6 +16,120 @@ a{
 
 }
 
+.leftSide {
+    width: 43%;
+    min-height: 100vh;
+}
+
+.yellow::before{
+    background-color: #141212;
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    transform: rotate(-14deg);
+    left: 50%;
+    top: -30%;
+}
+
+.yellow{
+    position: relative;
+    background-color: #FFB400;
+    min-height: 100vh;
+    width: 90%;
+    overflow: hidden;
+}
+
+.middleSide {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.rightSide {
+    width: 7%;
+    min-height: 100vh;
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #6D6D6D;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.picture{
+    position: relative;
+    background-color: #000000;
+    min-height: 88vh;
+    width: 84%;
+    margin: 40px;
+    border-radius: 30px;
+    /* right: 56vh; */
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+}
+
+img{
+    position: absolute;
+    bottom: 0px;
+    border-radius: 30px;
+}
+
+.dot1 {
+    line-height: 50px;
+    border-radius: 50px ;
+    background: #FFB400;
+}
+
+.bigButton:hover{
+    background-color: #FFB400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .head{
    min-width: 100vh; 
    background-color: yellow;
@@ -54,41 +168,9 @@ a{
     font-weight: bold;
 }
 
-.yellow::before{
-    background-color: #141212;
-    height: 150%;
-    width: 150%;
-    position: absolute;
-    content: '';
-    transform: rotate(-14deg);
-    left: 70%;
-    top: -30%;
-}
 
-.yellow{
-    position: relative;
-    background-color: #FFB400;
-    min-height: 100vh;
-    width: 26.3%;
-    overflow: hidden;
-}
 
-.picture{
-    position: relative;
-    background-color: #000000;
-    min-height: 88vh;
-    width: 32.5%;
-    margin: 40px;
-    border-radius: 30px;
-    right: 56vh;
-    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
-}
 
-img{
-    position: absolute;
-    bottom: 0px;
-    border-radius: 30px;
-}
 
 .slideBar{
     background-color: #141212;
@@ -99,7 +181,7 @@ img{
     background: #FFB400;
 }
 
-.dot {
+/* .dot {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -109,12 +191,7 @@ img{
     text-align: center;
     margin: 20px;
     overflow: hidden;
-}
-.dot1 {
-    line-height: 25px;
-    border-radius: 50px ;
-    background: #FFB400;
-}
+} */
 
 /* .dot:hover{
     width: 100px;
@@ -156,4 +233,12 @@ li{
 .experince{
     width: 60%;
     background-color: blue;
+}
+
+.content{
+    background-color: blue; 
+    color: white;text-align: center;
+    vertical-align: middle; 
+    margin-left: 700px;
+    width: 60%;
 }
