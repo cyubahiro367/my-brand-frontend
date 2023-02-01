@@ -134,7 +134,6 @@ li{
 }
 
 #project1{
-    background-color: red;
     width: 500px;
     height: 200px;
     border-radius: 10px;
@@ -187,7 +186,6 @@ li{
 }
 
 .blogImage{
-    background-color: blue;
     width: 100%;
     height: 250px;
     border-radius: 10px 10px 0px 0px;
@@ -208,4 +206,52 @@ li{
     width: 100%;
     height: 210px;
     border-radius: 0px 0px 10px 10px;
+}
+
+.information{
+    min-height: 80%;
+    width: 40%;
+    margin: 50px;
+}
+
+.message{
+    min-height: 80%;
+    width: 60%;
+    margin: 70px;
+}
+
+form{
+    text-align: center;
+    margin: 1000px;
+}
+
+.dot2 {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #6D6D6D;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+input{
+    background-color: #333333;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    /* position:absolute; */
+    margin-bottom:20px;
+}
+
+.inputEmail{
+    width: 600px;
+    height: 40px;
+    border-radius: 30px;
+}
+text{
+    border-radius: 30px;
 }
