@@ -24,7 +24,6 @@ li{
 
 .main {
     width: 93%;
-    min-height: 100vh;
 }
 
 .leftSide {
@@ -72,6 +71,18 @@ li{
     text-align: center;
     margin: 20px 0px 0px 0px;
     overflow: hidden;
+}
+
+.skill1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    border: 10px solid #FFB400;
+    padding: 30px;
+    margin-left: 150px;
 }
 
 .picture{
@@ -128,9 +139,13 @@ li{
 }
 
 .content{
-    height: 85%;
     display: flex;
     margin: 20px;
+}
+
+.content-about{
+    width: 100%;
+    height: 75vh;
 }
 
 #project1{
@@ -215,7 +230,7 @@ li{
 }
 
 .message{
-    min-height: 80%;
+    height: 50%;
     width: 60%;
     margin: 70px;
 }
@@ -254,4 +269,28 @@ input{
 }
 text{
     border-radius: 30px;
+}
+
+.personalInfo{
+    width: 50%;
+    height: 100%;
+    background-color: #FFB400;
+}
+
+.info{
+    padding: 30px;
+    width: 80%;
+    height: 90%;
+    margin-left: 30px;
+    
+}
+
+.skills{
+    width: 100%;
+    height: 50%;
+}
+
+.education{
+    width: 100%;
+    height: 50%;
 }
