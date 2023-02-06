@@ -2,6 +2,10 @@ body{
     background-color: #141212;
 }
 
+*{
+    color: white;
+}
+
 html,body{
     margin: 0;
     padding: 0;
@@ -19,6 +23,8 @@ li{
 
 .container{
     display: flex;
+    background-color: #141212;
+    height: 100vh;
 
 }
 
@@ -59,9 +65,14 @@ li{
 .rightSide {
     width: 7%;
     min-height: 100vh;
+    /* position: sticky;  */
+    position: fixed; 
+    right: 0
 }
 
 .dot {
+    /* margin-left: 35px; */
+    
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -103,8 +114,9 @@ li{
 }
 
 .dot1 {
-    line-height: 50px;
-    border-radius: 50px ;
+    width: 20%;
+    height:110%;
+    border-radius: 50%;
     background: #FFB400;
 }
 
@@ -293,4 +305,226 @@ text{
 .education{
     width: 100%;
     height: 50%;
+}
+
+.imagesResponsive, .imageCenter{
+    display: none;
+}
+
+.smallLine{
+    width: 30px; 
+    height: 5px; 
+    background-color: #FFB400;
+    margin-top: 220px;
+}
+
+.homeContent{
+    margin-left: 20px;
+}
+
+.names{
+    color: #FFB400; 
+    text-align: center;
+    margin-top: 200px; 
+    font-size:40px;
+}
+
+.software{
+    color: white; 
+    text-align: center;
+    font-size:40px; 
+    margin-right: 70px;
+}
+
+.aboutMe{
+    color: white; 
+    font-size: 20px; 
+    line-height: 1.8;
+}
+
+.roundButton{
+    margin-top: 90px; 
+    border: 2px solid #FFB400; 
+    border-radius: 50px; 
+    display: flex; 
+    width: 50%; 
+    height: 50px; 
+    background-color: rgb(255, 180, 0, 0);
+    align-items: center;
+}
+
+.more{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px; 
+    margin-left: 40px; 
+    color: white; 
+    font-weight: bold;
+}
+
+.more1{
+    width: 80%;
+}
+
+.modeReponsive{
+    display: none;
+}
+
+.rightSideResponsive{
+    display: none;
+}
+
+/* @media (max-width: 578px){
+    .container{
+        background-color: #141212;
+        display: block;
+        width: 100vh;
+    }
+    .yellow::before{
+        display: none;
+    }
+
+    .middleSide{
+        background-color: yellow;
+    }
+
+    .rightSide{
+        background-color: blue;
+    }
+} */
+
+@media (max-width: 768px) {
+    .container{
+        position: relative;
+    }
+
+    .rightSide, .leftSide, .smallLine, .modeResponsive{
+        display: none;
+    }
+    .middleSide{
+        width: 100%;
+        display: block;
+    }
+
+    .imagesResponsive{
+        display: block;
+        padding-top: 50px;
+    }
+
+    .imagesResponsive img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #333333;
+    }
+
+    .homeContent{
+        margin-left: 0px;
+    }
+
+    .imageCenter{
+        display: flex;
+        justify-content: center;
+    }
+    .names{
+        margin-top: 30px;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .introduction{
+        display: flex;
+        justify-content: center;
+    }
+
+    .software{
+        color: white; 
+        text-align: center;
+        font-size:25px; 
+        margin-right: 0px;
+        margin-top: -20px;
+        font-weight: bold;
+    }
+
+    .aboutMe{
+        text-align: center;
+        color: white; 
+        font-size: 12px; 
+        margin-top: 40px;
+    }
+
+    .aboutBottom{
+        display: flex;
+        justify-content: center;
+    }
+
+    .roundButton{
+        /* margin-top: 90px;  */
+        border: 2px solid #FFB400; 
+        border-radius: 50px; 
+        display: flex; 
+        width: 100%; 
+        height: 50px; 
+        background-color: rgb(255, 180, 0, 0); 
+        padding: 0px 0px 0px 20px;
+    }
+
+    .more{
+        text-align: center;
+        /* vertical-align: middle; */
+        /* line-height: 50px;  */
+        margin-left: 0px; 
+        color: white; 
+        font-weight: bold;
+    }
+
+    .more1{
+        width: 80%;
+    }
+
+    .dot1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50% ;
+        background: #FFB400;
+    }
+    .rightSideResponsive{
+        display: block;
+    }
+
+    .links ul{
+        width: 100%;
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: -15px;
+        background-color: #333333;
+        /* justify-content: space-around; */
+    }
+
+    .links ul li{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .modeReponsive{
+        display: flex;
+        justify-content: end;
+        height: 50px;
+    }
+
+    .dotMode {
+        margin: 20px 15px 0px 0px;
+        
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #6D6D6D;
+        color: #fff;
+        text-align: center;
+        /* overflow: hidden; */
+    }
+    
 }
