@@ -21,6 +21,10 @@ li{
     list-style-type: none
 }
 
+.wrapper{
+    position: relative;
+}
+
 .container{
     display: flex;
     background-color: #141212;
@@ -374,28 +378,12 @@ text{
     display: none;
 }
 
-/* @media (max-width: 578px){
-    .container{
-        background-color: #141212;
-        display: block;
-        width: 100vh;
-    }
-    .yellow::before{
-        display: none;
-    }
 
-    .middleSide{
-        background-color: yellow;
-    }
 
-    .rightSide{
-        background-color: blue;
-    }
-} */
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .container{
         position: relative;
+        height: unset;
     }
 
     .rightSide, .leftSide, .smallLine, .modeResponsive{
@@ -412,8 +400,8 @@ text{
     }
 
     .imagesResponsive img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         border: 2px solid #333333;
     }
@@ -428,7 +416,7 @@ text{
     }
     .names{
         margin-top: 30px;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
         font-weight: bold;
     }
@@ -441,7 +429,7 @@ text{
     .software{
         color: white; 
         text-align: center;
-        font-size:25px; 
+        font-size:30px; 
         margin-right: 0px;
         margin-top: -20px;
         font-weight: bold;
@@ -450,17 +438,18 @@ text{
     .aboutMe{
         text-align: center;
         color: white; 
-        font-size: 12px; 
+        font-size: 18px; 
         margin-top: 40px;
+        padding: 20px;
     }
 
     .aboutBottom{
         display: flex;
         justify-content: center;
+        margin-bottom: 100px;
     }
 
     .roundButton{
-        /* margin-top: 90px;  */
         border: 2px solid #FFB400; 
         border-radius: 50px; 
         display: flex; 
@@ -468,12 +457,11 @@ text{
         height: 50px; 
         background-color: rgb(255, 180, 0, 0); 
         padding: 0px 0px 0px 20px;
+        margin-top: 10px;
     }
 
     .more{
         text-align: center;
-        /* vertical-align: middle; */
-        /* line-height: 50px;  */
         margin-left: 0px; 
         color: white; 
         font-weight: bold;
@@ -500,11 +488,11 @@ text{
         left: 0;
         bottom: -15px;
         background-color: #333333;
-        /* justify-content: space-around; */
+        padding: unset;
+        justify-content: space-around;
     }
 
     .links ul li{
-        margin-left: 10px;
         margin-bottom: 20px;
     }
 
@@ -524,7 +512,28 @@ text{
         background: #6D6D6D;
         color: #fff;
         text-align: center;
-        /* overflow: hidden; */
     }
     
+}
+
+@media (max-width: 768px) {
+    .aboutMe{ 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 578px) {
+    .aboutMe{ 
+        font-size: 14px; 
+    }
+
+    .imagesResponsive img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .links ul li{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
 }
