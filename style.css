@@ -164,8 +164,12 @@ li{
 }
 
 .content{
-    display: flex;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    /* margin: 20px; */
 }
 
 .content-about{
@@ -173,28 +177,12 @@ li{
     height: 75vh;
 }
 
-#project1{
-    width: 500px;
+#project1, #project2, #project3{
+    width: 100%;
     height: 200px;
     border-radius: 10px;
-    margin: 30px;
-    margin-top: 120px;
-}
-
-#project2{
-    width: 500px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 30px;
-    margin-top: 120px;
-}
-
-#project3{
-    width: 500px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 30px;
-    margin-top: 120px;
+    /* margin: 30px;
+    margin-top: 120px; */
 }
 
 .projectImage{
@@ -398,6 +386,11 @@ text{
     .rightSide, .leftSide, .smallLine, .modeResponsive{
         display: none;
     }
+
+    .main{
+        width: 100%;
+    }
+
     .middleSide{
         width: 100%;
         display: block;
@@ -522,6 +515,12 @@ text{
         color: #fff;
         text-align: center;
     }
+
+    .content{
+        grid-template-columns: 45% 45%;
+        margin-left: 60px;
+
+    }
     
 }
 
@@ -529,6 +528,7 @@ text{
     .aboutMe{ 
         font-size: 16px; 
     }
+
 }
 
 @media (max-width: 578px) {
@@ -545,4 +545,30 @@ text{
         margin-left: 10px;
         margin-bottom: 20px;
     }
+
+    .project1{
+        width: 100%;
+    }
+
+    .content{
+        display: block;
+        margin-left: 50px;
+    }
+
+    .content img{
+        display: block;
+    }
+
+    .header{
+        margin-top: 20px;
+    }
+
+    #project1, #project2, #project3{
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+
 }
