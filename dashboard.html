@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/frank.JPG" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <script src="./js/login_check.js"></script>
+    <div class="wrapper">
+           <div class="dashboard_spacing" id="dashboard_spacing">
+              <div class="dash_fixed">
+                <div class="dash_title myfont_family">
+                    <div class=" pl_10"><p>DASHBOARD</p></div>
+                </div>
+                <div>
+                    <div class="dash_nav pt_20">
+                        <ul>
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="#all_dashboard_post"> <li class="dash_sec" id="mypost">Post</li></a>
+                            <a href="#all_dashboard_query"><li class="dash_sec" id="myquery">Query</li></a>
+                            <a href="#dashboard_new_post"><li class="dash_sec" id="mynew">Add new post</li></a>
+                            <a href="login.html"><li>Log out</li></a>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+
+              <div class="dash_content">
+               
+                <div class="post_heading pt_10 myflex_between">
+                        <div class="post_right">
+                           <div>
+                            <p><b id="dashboard_title_heading">Post</b></p>
+                           </div>
+                        </div>
+                        <div class="mymenu_bar" id="mymenu_bar">
+              
+                            <div class="sub_menu myflex pt_10 pb_10">
+                                <div class="menu" onclick="unhide('dashboard_spacing')">
+                                    <div class="menu_line_dash" id="line_1"></div>
+                                    <div class="menu_line_dash" id="line_2"></div>
+                                    <div class="menu_line_dash" id="line_3"></div>
+                                </div>
+                            </div>
+                             
+                        </div>   
+                </div>
+
+                <!--______________________ ALL Post _______________________-->
+               <div class="all_dashboard_post" id="all_dashboard_post" data-name='Post' >
+
+                 <div class="all_blogs all_blogs_dash" id="all_blogs">
+                  <div class="blog_details_dash blog_details">
+                      <div class="blog_img">
+                          <img src="images/blog1.jpg" alt="">
+                      </div>
+  
+                      <div class="blog_news">
+                          <div class="sub_title">
+                              <p>Explicablo Illo</p>
+                          </div>
+                          <div>
+                              <p>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Explicabo ad ullam nesciunt repudiandae corporis?
+                                  Nobis quas corporis deleniti animi quasi. Adipisci neque ea
+                                  doloremque modi distinctio doloribus eos libero ut  animi quasi. Adipisci neque ea
+                                  doloremque modi distinctio doloribus eos libero ut?
+                              </p>
+                          </div>
+                          <div class="like_section myflex pt_20">
+  
+                              <div>
+                                  <p>By: Admin</p>
+                              </div>
+  
+                              <div class="myflex mylikes">
+                                  
+                                 <div class="like_btn_section myflex">
+                                      <div class="red_heart ">
+                                      <img src="images/liked.png" alt="">
+                                      </div>
+                                      <div class="white_heart">
+                                      <img src="images/unliked.png" alt="">
+                                      </div>
+                                 </div>
+                                 <div>
+                                  <p>10</p>
+                              </div>
+                              </div>
+  
+                              <div class="cmnt_btn myflex">
+                                  <div class="cmnt_img">
+                                      <img src="images/cmnt.png" alt="">
+                                  </div>
+                                  <div>
+                                      <p>233</p>
+                                  </div>
+                              </div>
+  
+                          </div>
+                         <div class="read_more read_more_dash myflex_between myorange pt_20">
+                              <div class="mydelete">
+                                <p>Delete</p>
+                              </div>
+                              <div class="myupdate">
+                                <p>Update</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                
+                 </div>
+
+               </div> 
+
+               <!-- ______________________All queries__________________________________ -->
+               <div class="all_dashboard_query" id="all_dashboard_query"  data-name="Query" >
+                    <div class="all_queries pt_50">
+                        <div>
+                            <table>
+                                <thead>
+                                    <tr class="myorange">
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myqueries">
+                                     <tr>
+                                        <td>Emery Frank</td>
+                                        <td>frankflej@gmail.com</td>
+                                        <td>Hello your website was cool i really liked it. How much can you cost me for one personal portofolio too?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emery Frank</td>
+                                        <td>frankflej@gmail.com</td>
+                                        <td>Hello your website was cool i really liked it. How much can you cost me for one personal portofolio too?</td>
+                                    </tr> 
+                                  
+                                  
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+               </div>
+
+                <!-- ______________________New post__________________________________ -->
+               <div  class="dashboard_new_post" id="dashboard_new_post" data-name="New Post" >
+                   <div>
+    
+                    <div class="new_post_section myflex_center">
+                        <div class="real_post_section">
+                            <form action="">
+                                <div class="new_post_input">
+                                    <input type="text" placeholder="Post title" id="post_title">
+                                </div>
+                                <div class="new_post_input">
+                                    <textarea name="" id="post_details" cols="20" rows="8" placeholder="Post details"></textarea>
+                                </div>
+                                <div class="new_post_input">
+                                    <div>
+                                        <input type="file" name="" id="img_input" onchange="mypic()">
+                                    </div>
+                                    <div class="new_img">
+                                        <img src="" alt="" id="myimg_post">
+                                    </div>
+                                </div>
+                                <div class="new_post_btn">
+                                    <button class="mywhite" id="save_post">Save Post</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+                 <!-- ______________________Update post__________________________________ -->
+               <div  class="dashboard_update" id="dashboard_update" data-name="Update">
+                <div>
+
+                 <div class="new_post_section myflex_center">
+                     <div class="real_post_section">
+                         <form action="">
+                             <div class="new_post_input">
+                                 <input type="text" placeholder="Post title" id="post_title_upd">
+                             </div>
+                             <div class="new_post_input">
+                                 <textarea name="" id="post_details_upd" cols="20" rows="8" placeholder="Post details"></textarea>
+                             </div>
+                             <div class="new_post_input">
+                                 <div>
+                                     <input type="file" name="" id="img_input_upd" onchange="mypic()">
+                                 </div>
+                                 <div class="new_img">
+                                     <img src="" alt="" id="myimg_post_upd">
+                                 </div>
+                             </div>
+
+                             <div class="update_btns myflex_between">
+                                <div id="cancel_upd" class="cancel_upd upd">
+                                    <button class="mywhite" >Cancel</button>
+                                </div>
+                                 <div id="save_upd" class="save_upd upd">
+                                    <button class="mywhite">Update Post</button>
+                                 </div>
+                             </div>
+
+                         </form>
+                     </div>
+                 </div>
+                </div>
+               </div>
+
+               
+              </div>
+           </div>
+        
+           
+    
+           <div class="mobile_nav" id="mobile_nav">
+            <div>
+                 <div class="myflex_end">
+                     <div class="mobile_close_btn" onclick="hide('dashboard_spacing')">
+                        <img src="images/cross.png" alt="">
+                     </div>
+            </div>
+
+            <div class="">
+                <div class="nav_mobile_list " onclick="unhide('dashboard_spacing')">
+                    <ul class="myfont_family" >
+                        <a href="index.html"><li>Home</li></a>
+                        <li class="dash_sec" id='mobile_post' onclick="mypages('all_dashboard_post')">Post</li>
+                        <li class="dash_sec" id='mobile_query' onclick="mypages('all_dashboard_query')">Query</li>
+                        <li class="dash_sec" id="mobile_new_post" onclick="mypages('dashboard_new_post')">Add new post</li>
+                        <a href="login.html"><li>Log out</li></a> 
+                    </ul>
+                </div>
+            </div>
+            </div>
+           </div>
+
+           
+         
+      </div>
+     
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/dashboard.js"></script>
+</html>
